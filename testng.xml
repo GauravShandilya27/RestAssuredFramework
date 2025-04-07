@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Petsuite">
+    <!-- Define the listeners for generating the extent reports -->
+    <listeners>
+        <listener class-name="api.utilities.ExtentReportManager" />
+    </listeners>
+
+    <!-- Define a test -->
+    <test thread-count="5" name="Pettest">
+        <classes>
+            <!-- List of classes to be executed in this test -->
+            <!--<class name="api.test.UserTests"/> -->
+            <class name="api.test.UserTests2"/>
+            <!--<class name="api.test.DDTests"/>-->  <!-- This is commented out, remove the comment to include it -->
+        </classes>
+    </test>
+</suite>
